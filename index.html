@@ -3,1009 +3,559 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#14110e">
 
-  <!-- 
-    - primary meta tags
-  -->
-  <title>Barber Place-Barbers & Hair Cutting</title>
-  <meta name="title" content="Barber - Barbers & Hair Cutting">
-  <meta name="description" content="This is the Babershop template for DFW Software Consulting">
+  <title>The Barber Spot | Barbershop in Allen, TX - Fades, Beard Trims &amp; Hot-Towel Shaves</title>
+  <meta name="description" content="The Barber Spot is a fictional Dallas-Fort Worth barbershop used as a demo site by DFW Software Consulting. Classic cuts, skin fades, beard shape-ups and hot-towel shaves.">
+  <meta name="robots" content="noindex">
 
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Barber Spot | Barbershop in Allen, TX">
+  <meta property="og:description" content="Classic cuts, skin fades, beard shape-ups and hot-towel shaves. A demo site by DFW Software Consulting.">
+  <meta property="og:url" content="https://dfw-software-consulting.github.io/barberShop/">
+  <meta property="og:image" content="https://dfw-software-consulting.github.io/barberShop/assets/images/hero-banner.jpg">
+  <meta property="og:image:alt" content="A barber styling a client's hair with scissors and a comb">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 
-  <!-- 
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300,400;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-  <!-- 
-    - flaticon
-  -->
-  <link rel="stylesheet" href="assets/css/flaticon.min.css">
+  <link rel="stylesheet" href="./assets/css/flaticon.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- 
-    - preload images
-  -->
-  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
-
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body id="top">
 
-  <!-- 
-    - #HEADER
-  -->
+  <!-- inline icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></g></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+      <symbol id="i-up" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m6 15 6-6 6 6"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    </defs>
+  </svg>
 
-  <header class="header">
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="header" data-header>
 
     <div class="header-top">
-      <div class="container">
-
-        <ul class="header-top-list">
-
-          <li class="header-top-item">
-            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-
-            <p class="item-title">Call Us :</p>
-
-            <a href="tel:01234567895" class="item-link">012 (345) 67 895</a>
-          </li>
-
-          <li class="header-top-item">
-            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-            <p class="item-title">Opening Hour :</p>
-
-            <p class="item-text">Sunday - Friday, 08 am - 09 pm</p>
-          </li>
-
-          <li>
-            <ul class="social-list">
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-youtube"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-                </a>
-              </li>
-
-            </ul>
-          </li>
-
-        </ul>
-
+      <div class="container header-top-inner">
+        <a href="tel:+12145550142" class="top-link">
+          <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+          <span>(214) 555-0142</span>
+        </a>
+        <p class="top-link">
+          <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
+          <span>Mon-Fri 9 am - 7 pm &middot; Sat 8 am - 5 pm &middot; Sun closed</span>
+        </p>
       </div>
     </div>
 
-    <div class="header-bottom" data-header>
-      <div class="container">
+    <div class="header-bottom">
+      <div class="container header-bottom-inner">
 
-        <a href="#" class="logo">
-          Barber
-          <span class="span">Hair Salon</span>
+        <a href="#home" class="logo" aria-label="The Barber Spot, home">
+          <span class="logo-pole" aria-hidden="true"></span>
+          <span class="logo-text">
+            The Barber Spot
+            <span class="logo-sub">Barbershop &middot; Allen, TX</span>
+          </span>
         </a>
 
-        <nav class="navbar container" data-navbar>
+        <nav class="navbar" id="site-nav" aria-label="Primary" data-navbar>
           <ul class="navbar-list">
-
-            <li class="navbar-item">
-              <a href="#home" class="navbar-link" data-nav-link>Home</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#services" class="navbar-link" data-nav-link>Services</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#pricing" class="navbar-link" data-nav-link>Pricing</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#gallery" class="navbar-link" data-nav-link>Gallery</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#appointment" class="navbar-link" data-nav-link>Appointment</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#" class="navbar-link" data-nav-link>Contact</a>
-            </li>
-
+            <li><a href="#home" class="navbar-link" data-nav-link>Home</a></li>
+            <li><a href="#services" class="navbar-link" data-nav-link>Services</a></li>
+            <li><a href="#pricing" class="navbar-link" data-nav-link>Pricing</a></li>
+            <li><a href="#about" class="navbar-link" data-nav-link>Our Barbers</a></li>
+            <li><a href="#gallery" class="navbar-link" data-nav-link>Gallery</a></li>
+            <li><a href="#reviews" class="navbar-link" data-nav-link>Reviews</a></li>
+            <li><a href="#contact" class="navbar-link" data-nav-link>Contact</a></li>
+            <li class="navbar-cta"><a href="#appointment" class="btn btn-sm" data-nav-link>Book Now</a></li>
           </ul>
         </nav>
 
-        <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
-          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        <a href="#appointment" class="btn btn-sm header-cta">Book Now</a>
+
+        <button class="nav-toggle-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggler>
+          <svg class="icon icon-menu" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"/></svg>
         </button>
-
-        <a href="#" class="btn has-before">
-          <span class="span">Appointment</span>
-
-          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-        </a>
 
       </div>
     </div>
 
   </header>
 
+  <main id="main">
 
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="section hero has-before has-bg-image" id="home" aria-label="home"
-        style="background-image: url('./assets/images/hero-banner.jpg')">
-        <div class="container">
-
-          <h1 class="h1 hero-title">Barbers & Hair Cutting</h1>
-
-          <p class="hero-text">
-            Sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-            suspendisse
-            ultrices gravida
-          </p>
-
-          <a href="#" class="btn has-before">
-            <span class="span">Explore Our Services</span>
-
-            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-          </a>
-
+    <!-- HERO -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero-img" src="./assets/images/hero-banner.jpg" width="1920" height="950" alt="A barber styling a bearded client's hair with scissors and a comb" fetchpriority="high">
+      <div class="container hero-inner">
+        <p class="eyebrow">Allen, Texas &middot; Est. 2012</p>
+        <h1 class="hero-title">Sharp cuts.<br><span class="accent">Straight razors.</span><br>No rush.</h1>
+        <p class="hero-text">
+          A neighborhood barbershop where every cut is a conversation, every fade is blended by hand,
+          and every shave ends with a hot towel. Walk-ins welcome, appointments preferred.
+        </p>
+        <div class="hero-actions">
+          <a href="#appointment" class="btn">Book an Appointment
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a href="#services" class="btn btn-ghost">Explore Services</a>
         </div>
-      </section>
+        <ul class="hero-stats" aria-label="Shop highlights">
+          <li><strong>14+</strong><span>Years in Allen</span></li>
+          <li><strong>4.9</strong><span>Average rating</span></li>
+          <li><strong>3</strong><span>Master barbers</span></li>
+        </ul>
+      </div>
+    </section>
 
+    <div class="pole-divider" aria-hidden="true"></div>
 
+    <!-- SERVICES -->
+    <section class="section section--light" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">What we do</p>
+          <h2 class="section-title" id="services-title">Services built around the chair</h2>
+          <p class="section-text">From a clean everyday cut to a full hot-towel shave, every service starts with a quick consultation so you leave exactly how you pictured it.</p>
+        </header>
 
+        <ul class="grid grid-services">
+          <li class="card service-card reveal">
+            <div class="card-icon"><i class="flaticon-salon" aria-hidden="true"></i></div>
+            <h3 class="card-title">Classic Haircut</h3>
+            <p class="card-text">Scissor and clipper work with a neck cleanup, shampoo rinse and style. Tailored to your head shape and how you actually wear your hair.</p>
+            <p class="card-meta"><span>30 min</span><span>from $35</span></p>
+          </li>
+          <li class="card service-card reveal">
+            <div class="card-icon"><i class="flaticon-beauty-salon" aria-hidden="true"></i></div>
+            <h3 class="card-title">Skin Fade</h3>
+            <p class="card-text">Low, mid, high or drop. A seamless blend down to the skin, finished with a foil-shaver edge so it stays crisp all week.</p>
+            <p class="card-meta"><span>40 min</span><span>from $40</span></p>
+          </li>
+          <li class="card service-card reveal">
+            <div class="card-icon"><i class="flaticon-barber" aria-hidden="true"></i></div>
+            <h3 class="card-title">Beard Trim &amp; Shape-Up</h3>
+            <p class="card-text">Beard lines defined, cheeks and neckline cleaned up, and the length balanced with a finishing beard oil.</p>
+            <p class="card-meta"><span>20 min</span><span>from $25</span></p>
+          </li>
+          <li class="card service-card reveal">
+            <div class="card-icon"><i class="flaticon-straight-razor" aria-hidden="true"></i></div>
+            <h3 class="card-title">Hot-Towel Shave</h3>
+            <p class="card-text">The full ritual: warm towels, pre-shave oil, rich lather and a close straight-razor shave, closed out with a cool towel and balm.</p>
+            <p class="card-meta"><span>40 min</span><span>from $45</span></p>
+          </li>
+          <li class="card service-card reveal">
+            <div class="card-icon"><i class="flaticon-scissors" aria-hidden="true"></i></div>
+            <h3 class="card-title">Kids' Cut</h3>
+            <p class="card-text">Patient, friendly barbers for ages 12 and under. Short wait, steady hands, and a lollipop for good behavior.</p>
+            <p class="card-meta"><span>25 min</span><span>from $28</span></p>
+          </li>
+          <li class="card service-card reveal">
+            <div class="card-icon"><i class="flaticon-shaving-razor" aria-hidden="true"></i></div>
+            <h3 class="card-title">Line-Up &amp; Edge-Up</h3>
+            <p class="card-text">Quick maintenance between cuts: hairline, temples and neckline squared off with the trimmer and razor.</p>
+            <p class="card-meta"><span>15 min</span><span>from $18</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
+    <!-- PRICING -->
+    <section class="section section--dark pricing" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">The menu</p>
+          <h2 class="section-title" id="pricing-title">Straightforward pricing</h2>
+          <p class="section-text">No surprise add-ons. Prices are starting rates, and cash or card is always welcome. Tips are never expected, always appreciated.</p>
+        </header>
 
-      <!-- 
-        - #SERVICE
-      -->
-
-      <section class="section service" id="services" aria-label="services">
-        <div class="container">
-
-          <h2 class="h2 section-title text-center">Service We Provide</h2>
-
-          <p class="section-text text-center">
-            Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua suspendisse
-          </p>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <i class="flaticon-salon"></i>
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Hair Cutting Style</a>
-                </h3>
-
-                <p class="card-text">
-                  Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-
-                <a href="#" class="card-btn" aria-label="more">
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <i class="flaticon-shampoo"></i>
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Hair Washing</a>
-                </h3>
-
-                <p class="card-text">
-                  Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-
-                <a href="#" class="card-btn" aria-label="more">
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <i class="flaticon-hot-stone"></i>
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Body Treatments</a>
-                </h3>
-
-                <p class="card-text">
-                  Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-
-                <a href="#" class="card-btn" aria-label="more">
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <i class="flaticon-treatment"></i>
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Beauty & Spa</a>
-                </h3>
-
-                <p class="card-text">
-                  Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-
-                <a href="#" class="card-btn" aria-label="more">
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <i class="flaticon-shaving-razor"></i>
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Stylist Shaving</a>
-                </h3>
-
-                <p class="card-text">
-                  Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-
-                <a href="#" class="card-btn" aria-label="more">
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <i class="flaticon-hair-dye"></i>
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Multi Hair Colors</a>
-                </h3>
-
-                <p class="card-text">
-                  Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-
-                <a href="#" class="card-btn" aria-label="more">
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-          </ul>
-
+        <div class="tab-filter" role="group" aria-label="Filter price list">
+          <button type="button" class="filter-btn active" data-filter-btn="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-btn" data-filter-btn="haircuts" aria-pressed="false">Haircuts</button>
+          <button type="button" class="filter-btn" data-filter-btn="beard-shave" aria-pressed="false">Beard &amp; Shave</button>
+          <button type="button" class="filter-btn" data-filter-btn="combos" aria-pressed="false">Combos</button>
         </div>
-      </section>
 
+        <ul class="price-list">
+          <li data-filter="haircuts" class="price-item">
+            <div><h3 class="price-name">Classic Haircut</h3><p class="price-desc">Scissor or clipper cut, shampoo rinse &amp; style &middot; 30 min</p></div>
+            <data class="price" value="35">$35</data>
+          </li>
+          <li data-filter="haircuts" class="price-item">
+            <div><h3 class="price-name">Skin Fade</h3><p class="price-desc">Low, mid or high, foil-finished edge &middot; 40 min</p></div>
+            <data class="price" value="40">$40</data>
+          </li>
+          <li data-filter="haircuts" class="price-item">
+            <div><h3 class="price-name">Kids' Cut (12 &amp; under)</h3><p class="price-desc">Any style, quick and patient &middot; 25 min</p></div>
+            <data class="price" value="28">$28</data>
+          </li>
+          <li data-filter="haircuts" class="price-item">
+            <div><h3 class="price-name">Senior Cut (65+)</h3><p class="price-desc">Classic cut with neck cleanup &middot; 30 min</p></div>
+            <data class="price" value="28">$28</data>
+          </li>
+          <li data-filter="haircuts" class="price-item">
+            <div><h3 class="price-name">Line-Up &amp; Edge-Up</h3><p class="price-desc">Hairline, temples &amp; neckline &middot; 15 min</p></div>
+            <data class="price" value="18">$18</data>
+          </li>
+          <li data-filter="beard-shave" class="price-item">
+            <div><h3 class="price-name">Beard Trim &amp; Shape-Up</h3><p class="price-desc">Lines, cheeks &amp; neck, beard oil finish &middot; 20 min</p></div>
+            <data class="price" value="25">$25</data>
+          </li>
+          <li data-filter="beard-shave" class="price-item">
+            <div><h3 class="price-name">Hot-Towel Shave</h3><p class="price-desc">Straight-razor face shave, warm &amp; cool towels &middot; 40 min</p></div>
+            <data class="price" value="45">$45</data>
+          </li>
+          <li data-filter="beard-shave" class="price-item">
+            <div><h3 class="price-name">Head Shave</h3><p class="price-desc">Razor-smooth scalp with hot towel &middot; 35 min</p></div>
+            <data class="price" value="40">$40</data>
+          </li>
+          <li data-filter="combos" class="price-item">
+            <div><h3 class="price-name">Cut + Beard Combo</h3><p class="price-desc">Haircut with beard trim &amp; shape-up &middot; 50 min</p></div>
+            <data class="price" value="55">$55</data>
+          </li>
+          <li data-filter="combos" class="price-item">
+            <div><h3 class="price-name">Fade + Hot-Towel Shave</h3><p class="price-desc">Skin fade plus the full shave ritual &middot; 75 min</p></div>
+            <data class="price" value="75">$75</data>
+          </li>
+          <li data-filter="combos" class="price-item">
+            <div><h3 class="price-name">Father &amp; Son</h3><p class="price-desc">Two cuts back to back, kid 12 &amp; under &middot; 55 min</p></div>
+            <data class="price" value="60">$60</data>
+          </li>
+        </ul>
+      </div>
+    </section>
 
+    <!-- ABOUT / BARBERS -->
+    <section class="section section--light" id="about" aria-labelledby="about-title">
+      <div class="container">
 
-
-
-      <!-- 
-        - #PRICING
-      -->
-
-      <section class="section pricing has-bg-image has-before" id="pricing" aria-label="pricing"
-        style="background-image: url('./assets/images/pricing-bg.jpg')">
-        <div class="container">
-
-          <h2 class="h2 section-title text-center">Awesome Pricing Plan</h2>
-
-          <p class="section-text text-center">
-            Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua suspendisse
-          </p>
-
-          <div class="pricing-tab-container">
-
-            <ul class="tab-filter">
-
-              <li>
-                <button class="filter-btn active" data-filter-btn="all">
-                  <div class="btn-icon">
-                    <i class="flaticon-beauty-salon" aria-hidden="true"></i>
-                  </div>
-
-                  <p class="btn-text">All Pricing</p>
-                </button>
-              </li>
-
-              <li>
-                <button class="filter-btn" data-filter-btn="beauty-spa">
-                  <div class="btn-icon">
-                    <i class="flaticon-relax" aria-hidden="true"></i>
-                  </div>
-
-                  <p class="btn-text">Beauty & Spa</p>
-                </button>
-              </li>
-
-              <li>
-                <button class="filter-btn" data-filter-btn="body-treatments">
-                  <div class="btn-icon">
-                    <i class="flaticon-massage" aria-hidden="true"></i>
-                  </div>
-
-                  <p class="btn-text">Body Treatments</p>
-                </button>
-              </li>
-
-              <li>
-                <button class="filter-btn" data-filter-btn="face-washing">
-                  <div class="btn-icon">
-                    <i class="flaticon-spa" aria-hidden="true"></i>
-                  </div>
-
-                  <p class="btn-text">Face Washing</p>
-                </button>
-              </li>
-
-              <li>
-                <button class="filter-btn" data-filter-btn="meditations">
-                  <div class="btn-icon">
-                    <i class="flaticon-yoga" aria-hidden="true"></i>
-                  </div>
-
-                  <p class="btn-text">Meditations</p>
-                </button>
-              </li>
-
-              <li>
-                <button class="filter-btn" data-filter-btn="shaving">
-                  <div class="btn-icon">
-                    <i class="flaticon-razor-blade" aria-hidden="true"></i>
-                  </div>
-
-                  <p class="btn-text">Shaving</p>
-                </button>
-              </li>
-
+        <div class="about">
+          <figure class="about-media reveal">
+            <img src="./assets/images/clippers-closeup.jpg" width="1920" height="1258" loading="lazy" alt="Close-up of a barber trimming a client's beard with professional clippers">
+          </figure>
+          <div class="about-copy reveal">
+            <p class="eyebrow">Our story</p>
+            <h2 class="section-title" id="about-title">A shop that still takes its time</h2>
+            <p>The Barber Spot opened in 2012 with two chairs and a simple idea: a good haircut should feel unhurried. Today we are a three-barber shop with the same rule. We book real time for every client, keep the shop clean and the conversation easy, and sweat the small details like edges, blending and the last pass with a razor.</p>
+            <ul class="check-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Licensed, experienced barbers</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Sanitized tools between every client</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Walk-ins welcome, appointments preferred</li>
             </ul>
-
-            <ul class="grid-list">
-
-              <li data-filter="shaving">
-                <div class="pricing-card">
-
-                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-1.jpg" width="90" height="90" alt="Hair Cutting & Fitting"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="wrapper">
-                    <h3 class="h3 card-title">Hair Cutting & Fitting</h3>
-
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
-                  </div>
-
-                  <data class="card-price" value="89">$89</data>
-
-                </div>
-              </li>
-
-              <li data-filter="shaving">
-                <div class="pricing-card">
-
-                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-2.jpg" width="90" height="90" alt="Shaving & Facial"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="wrapper">
-                    <h3 class="h3 card-title">Shaving & Facial</h3>
-
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
-                  </div>
-
-                  <data class="card-price" value="45">$45</data>
-
-                </div>
-              </li>
-
-              <li data-filter="face-washing">
-                <div class="pricing-card">
-
-                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-3.jpg" width="90" height="90" alt="Hair Color & Wash"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="wrapper">
-                    <h3 class="h3 card-title">Hair Color & Wash</h3>
-
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
-                  </div>
-
-                  <data class="card-price" value="35">$35</data>
-
-                </div>
-              </li>
-
-              <li data-filter="body-treatments">
-                <div class="pricing-card">
-
-                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-4.jpg" width="90" height="90" alt="Body Massage"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="wrapper">
-                    <h3 class="h3 card-title">Body Massage</h3>
-
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
-                  </div>
-
-                  <data class="card-price" value="56">$56</data>
-
-                </div>
-              </li>
-
-              <li data-filter="beauty-spa">
-                <div class="pricing-card">
-
-                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-5.jpg" width="90" height="90" alt="Beauty & Spa"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="wrapper">
-                    <h3 class="h3 card-title">Beauty & Spa</h3>
-
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
-                  </div>
-
-                  <data class="card-price" value="27">$27</data>
-
-                </div>
-              </li>
-
-              <li data-filter="face-washing">
-                <div class="pricing-card">
-
-                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-6.jpg" width="90" height="90" alt="Facial & Face Wash"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="wrapper">
-                    <h3 class="h3 card-title">Facial & Face Wash</h3>
-
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
-                  </div>
-
-                  <data class="card-price" value="63">$63</data>
-
-                </div>
-              </li>
-
-              <li data-filter="body-treatments">
-                <div class="pricing-card">
-
-                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-7.jpg" width="90" height="90" alt="Backbone Massage"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="wrapper">
-                    <h3 class="h3 card-title">Backbone Massage</h3>
-
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
-                  </div>
-
-                  <data class="card-price" value="43">$43</data>
-
-                </div>
-              </li>
-
-              <li data-filter="meditations">
-                <div class="pricing-card">
-
-                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-8.jpg" width="90" height="90" alt="Meditation & Massage"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="wrapper">
-                    <h3 class="h3 card-title">Meditation & Massage</h3>
-
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
-                  </div>
-
-                  <data class="card-price" value="74">$74</data>
-
-                </div>
-              </li>
-
-            </ul>
-
           </div>
-
         </div>
-      </section>
 
+        <header class="section-head reveal team-head">
+          <h3 class="subhead">Meet the barbers</h3>
+        </header>
 
+        <ul class="grid grid-team">
+          <li class="card team-card reveal">
+            <div class="avatar" aria-hidden="true">R</div>
+            <h4 class="card-title">Rico</h4>
+            <p class="team-role">Owner &amp; Master Barber</p>
+            <p class="card-text">14 years behind the chair. Classic tapers, scissor-over-comb and anything that needs a steady hand.</p>
+          </li>
+          <li class="card team-card reveal">
+            <div class="avatar" aria-hidden="true">D</div>
+            <h4 class="card-title">Dre</h4>
+            <p class="team-role">Fade Specialist</p>
+            <p class="card-text">If it is a skin fade, a taper or a sharp line-up, Dre has probably done it a few thousand times.</p>
+          </li>
+          <li class="card team-card reveal">
+            <div class="avatar" aria-hidden="true">E</div>
+            <h4 class="card-title">Eli</h4>
+            <p class="team-role">Beards &amp; Straight Razor</p>
+            <p class="card-text">Our hot-towel shave expert. Patient, precise and the one to ask about beard shaping and growth.</p>
+          </li>
+        </ul>
 
+      </div>
+    </section>
 
+    <!-- GALLERY -->
+    <section class="section section--dark" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">The work</p>
+          <h2 class="section-title" id="gallery-title">Fresh out of the chair</h2>
+          <p class="section-text">A few recent cuts, fades and beard work from the shop floor.</p>
+        </header>
 
-      <!-- 
-        - #GALLERY
-      -->
+        <ul class="grid grid-gallery">
+          <li class="gallery-card reveal">
+            <img src="./assets/images/gallery-1.jpg" width="422" height="550" loading="lazy" alt="Barber tapering the sideburn of a bearded client with clippers">
+            <p class="gallery-caption">Taper &amp; beard blend</p>
+          </li>
+          <li class="gallery-card reveal">
+            <img src="./assets/images/gallery-2.jpg" width="422" height="550" loading="lazy" alt="A barber lathering a client's face for a straight-razor shave">
+            <p class="gallery-caption">Hot-towel shave</p>
+          </li>
+          <li class="gallery-card reveal">
+            <img src="./assets/images/gallery-3.jpg" width="422" height="550" loading="lazy" alt="Side view of a high skin fade with a full beard">
+            <p class="gallery-caption">High skin fade</p>
+          </li>
+          <li class="gallery-card reveal">
+            <img src="./assets/images/gallery-4.jpg" width="422" height="550" loading="lazy" alt="A barber styling the top of a client's hair before a cut">
+            <p class="gallery-caption">Pre-cut consultation</p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-      <section class="section gallery" id="gallery" aria-label="photo gallery">
-        <div class="container">
+    <!-- REVIEWS -->
+    <section class="section section--light" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Kind words</p>
+          <h2 class="section-title" id="reviews-title">What our regulars say</h2>
+          <p class="section-text">Sample testimonials from fictional clients, shown for demonstration.</p>
+        </header>
 
-          <div class="title-wrapper">
+        <ul class="grid grid-reviews">
+          <li class="card review-card reveal">
+            <p class="stars" role="img" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <blockquote>&ldquo;Best fade I have had since moving to Collin County. Dre took his time on the blend and it still looked sharp ten days later.&rdquo;</blockquote>
+            <p class="review-by"><strong>Marcus T.</strong> <span>Skin Fade</span></p>
+          </li>
+          <li class="card review-card reveal">
+            <p class="stars" role="img" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <blockquote>&ldquo;Treated myself to the hot-towel shave before my brother's wedding. Eli was calm, careful and it was honestly the most relaxing 40 minutes of my month.&rdquo;</blockquote>
+            <p class="review-by"><strong>Daniel R.</strong> <span>Hot-Towel Shave</span></p>
+          </li>
+          <li class="card review-card reveal">
+            <p class="stars" role="img" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <blockquote>&ldquo;My six-year-old usually hates haircuts. Rico kept him laughing the whole time. We are officially a Barber Spot family now.&rdquo;</blockquote>
+            <p class="review-by"><strong>Andre W.</strong> <span>Kids' Cut</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-            <div>
-              <h2 class="h2 section-title">Latest Photo Gallery</h2>
+    <!-- APPOINTMENT -->
+    <section class="section section--dark" id="appointment" aria-labelledby="appt-title">
+      <div class="container">
+        <div class="appoin">
 
-              <p class="section-text">
-                Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua
-                suspendisse
-              </p>
-            </div>
-
-            <a href="#" class="btn has-before">
-              <span class="span">Explore More Gallery</span>
-
-              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-            </a>
-
-          </div>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="gallery-card">
-
-                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
-                  <img src="./assets/images/gallery-1.jpg" width="422" height="550" loading="lazy" alt="Hair Cutting"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Hair Cutting</h3>
-
-                  <p class="card-text">Barbers & Salon Services</p>
-
-                  <a href="#" class="card-btn" aria-label="Read more">
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="gallery-card">
-
-                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
-                  <img src="./assets/images/gallery-2.jpg" width="422" height="550" loading="lazy" alt="Hair Cutting"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Hair Cutting</h3>
-
-                  <p class="card-text">Barbers & Salon Services</p>
-
-                  <a href="#" class="card-btn" aria-label="Read more">
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="gallery-card">
-
-                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
-                  <img src="./assets/images/gallery-3.jpg" width="422" height="550" loading="lazy" alt="Hair Cutting"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Hair Cutting</h3>
-
-                  <p class="card-text">Barbers & Salon Services</p>
-
-                  <a href="#" class="card-btn" aria-label="Read more">
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="gallery-card">
-
-                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
-                  <img src="./assets/images/gallery-4.jpg" width="422" height="550" loading="lazy" alt="Hair Cutting"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Hair Cutting</h3>
-
-                  <p class="card-text">Barbers & Salon Services</p>
-
-                  <a href="#" class="card-btn" aria-label="Read more">
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #APPOINTMENT
-      -->
-
-      <section class="section appoin" id="appointment" aria-label="appointment">
-        <div class="container">
-
-          <div class="appoin-card">
-
-            <figure class="card-banner img-holder" style="--width: 250; --height: 774;">
-              <img src="./assets/images/appoin-banner-1.jpg" width="250" height="774" loading="lazy" alt=""
-                class="img-cover">
+          <div class="appoin-copy reveal">
+            <p class="eyebrow">Book a chair</p>
+            <h2 class="section-title" id="appt-title">Make an appointment</h2>
+            <p class="section-text">Pick a service and a day and we will confirm by text. Prefer to just show up? Walk-ins are taken in the order they arrive.</p>
+            <figure class="appoin-media">
+              <img src="./assets/images/appointment-side.jpg" width="250" height="774" loading="lazy" alt="A barber trimming a client's mustache and beard with scissors">
             </figure>
+          </div>
 
-            <div class="card-content">
+          <div class="appoin-form-wrap reveal">
+            <form class="form" id="booking-form" novalidate aria-describedby="booking-note">
+              <p class="form-note" id="booking-note">Demo form. Nothing you type is sent or stored.</p>
 
-              <h2 class="h2 section-title">Make Appointment</h2>
-
-              <p class="section-text">
-                Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua
-                suspendisse
-              </p>
-
-              <form action="" class="appoin-form">
-
-                <div class="input-wrapper">
-                  <input type="text" name="name" placeholder="Your Full Name" required class="input-field">
-
-                  <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
+              <div class="field-row">
+                <div class="field">
+                  <label for="b-name">Full name</label>
+                  <input type="text" id="b-name" name="name" autocomplete="name" required aria-describedby="b-name-err">
+                  <p class="field-error" id="b-name-err" aria-live="polite"></p>
                 </div>
+                <div class="field">
+                  <label for="b-email">Email</label>
+                  <input type="email" id="b-email" name="email" autocomplete="email" required aria-describedby="b-email-err">
+                  <p class="field-error" id="b-email-err" aria-live="polite"></p>
+                </div>
+              </div>
 
-                <div class="input-wrapper">
-                  <input type="text" name="phone" placeholder="Phone Number" required class="input-field">
+              <div class="field-row">
+                <div class="field">
+                  <label for="b-phone">Phone</label>
+                  <input type="tel" id="b-phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="(214) 555-0100" required aria-describedby="b-phone-err">
+                  <p class="field-error" id="b-phone-err" aria-live="polite"></p>
+                </div>
+                <div class="field">
+                  <label for="b-service">Service</label>
+                  <select id="b-service" name="service" required aria-describedby="b-service-err">
+                    <option value="">Choose a service</option>
+                    <option>Classic Haircut</option>
+                    <option>Skin Fade</option>
+                    <option>Beard Trim &amp; Shape-Up</option>
+                    <option>Hot-Towel Shave</option>
+                    <option>Kids' Cut</option>
+                    <option>Line-Up &amp; Edge-Up</option>
+                    <option>Cut + Beard Combo</option>
+                    <option>Fade + Hot-Towel Shave</option>
+                    <option>Father &amp; Son</option>
+                  </select>
+                  <p class="field-error" id="b-service-err" aria-live="polite"></p>
+                </div>
+              </div>
 
-                  <select name="category" class="input-field">
-
-                    <option value="Select category">Select category</option>
-                    <option value="Beauty & spa">Beauty & spa</option>
-                    <option value="Body massage">Body massage</option>
-                    <option value="Shaving & Facial">Shaving & Facial</option>
-                    <option value="Hair Color">Hair Color</option>
-
+              <div class="field-row">
+                <div class="field">
+                  <label for="b-barber">Preferred barber</label>
+                  <select id="b-barber" name="barber">
+                    <option>No preference</option>
+                    <option>Rico</option>
+                    <option>Dre</option>
+                    <option>Eli</option>
                   </select>
                 </div>
+                <div class="field">
+                  <label for="b-date">Date</label>
+                  <input type="date" id="b-date" name="date" required aria-describedby="b-date-err">
+                  <p class="field-error" id="b-date-err" aria-live="polite"></p>
+                </div>
+              </div>
 
-                <input type="date" name="date" required class="input-field date">
+              <div class="field">
+                <label for="b-notes">Notes <span class="optional">(optional)</span></label>
+                <textarea id="b-notes" name="notes" rows="3" placeholder="Reference photo, allergies, anything we should know"></textarea>
+              </div>
 
-                <textarea name="message" placeholder="Write Message" required class="input-field"></textarea>
+              <button type="submit" class="btn">Request Appointment
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
 
-                <button type="submit" class="form-btn">
-                  <span class="span">Appointment Now</span>
-
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </button>
-
-              </form>
-
-            </div>
-
-            <figure class="card-banner img-holder" style="--width: 250; --height: 774;">
-              <img src="./assets/images/appoin-banner-2.jpg" width="250" height="774" loading="lazy" alt=""
-                class="img-cover">
-            </figure>
-
+              <p class="form-success" id="booking-success" role="status" tabindex="-1" hidden></p>
+            </form>
           </div>
 
         </div>
-      </section>
+      </div>
+    </section>
 
-    </article>
+    <!-- CONTACT -->
+    <section class="section section--light" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Find us</p>
+          <h2 class="section-title" id="contact-title">Visit the shop</h2>
+        </header>
+
+        <div class="contact-grid">
+          <div class="card contact-card reveal">
+            <h3 class="subhead">Location</h3>
+            <address>
+              The Barber Spot<br>
+              1450 Oak Crossing Drive, Suite 110<br>
+              Allen, TX 75013
+            </address>
+            <ul class="contact-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+12145550142">(214) 555-0142</a></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:hello@example.com">hello@example.com</a></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Free parking in front of the shop</li>
+            </ul>
+            <p class="open-status" data-open-status aria-live="polite"></p>
+          </div>
+
+          <div class="card contact-card reveal">
+            <h3 class="subhead">Hours</h3>
+            <table class="hours">
+              <caption class="sr-only">Opening hours</caption>
+              <tbody>
+                <tr data-day="1"><th scope="row">Monday</th><td>9:00 am - 7:00 pm</td></tr>
+                <tr data-day="2"><th scope="row">Tuesday</th><td>9:00 am - 7:00 pm</td></tr>
+                <tr data-day="3"><th scope="row">Wednesday</th><td>9:00 am - 7:00 pm</td></tr>
+                <tr data-day="4"><th scope="row">Thursday</th><td>9:00 am - 7:00 pm</td></tr>
+                <tr data-day="5"><th scope="row">Friday</th><td>9:00 am - 7:00 pm</td></tr>
+                <tr data-day="6"><th scope="row">Saturday</th><td>8:00 am - 5:00 pm</td></tr>
+                <tr data-day="0"><th scope="row">Sunday</th><td>Closed</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+  <!-- FOOTER -->
+  <footer class="footer">
     <div class="container">
 
       <div class="footer-top">
 
         <div class="footer-brand">
-
-          <a href="#" class="logo">
-            Barber
-            <span class="span">Hair Salon</span>
+          <a href="#home" class="logo" aria-label="The Barber Spot, back to top of page">
+            <span class="logo-pole" aria-hidden="true"></span>
+            <span class="logo-text">The Barber Spot<span class="logo-sub">Barbershop &middot; Allen, TX</span></span>
           </a>
+          <p class="footer-blurb">Get grooming tips and the occasional open-chair alert in your inbox. No spam, one email a month.</p>
 
-          <form action="" class="input-wrapper">
-
-            <input type="email" name="email_address" placeholder="Enter Your Email" required class="email-field">
-
-            <button type="submit" class="btn has-before">
-              <span class="span">Subscribe Now</span>
-
-              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-            </button>
-
+          <form class="newsletter" id="newsletter-form" novalidate>
+            <label for="n-email" class="sr-only">Email address</label>
+            <div class="newsletter-row">
+              <input type="email" id="n-email" name="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="n-err">
+              <button type="submit" class="btn btn-sm">Subscribe</button>
+            </div>
+            <p class="field-error" id="n-err" aria-live="polite"></p>
+            <p class="form-success" id="newsletter-success" role="status" hidden></p>
           </form>
-
         </div>
 
         <div class="footer-link-box">
 
-          <ul class="footer-list">
+          <nav aria-label="Footer">
+            <p class="footer-list-title">Quick Links</p>
+            <ul class="footer-list">
+              <li><a href="#services" class="footer-link">Services</a></li>
+              <li><a href="#pricing" class="footer-link">Pricing</a></li>
+              <li><a href="#about" class="footer-link">Our Barbers</a></li>
+              <li><a href="#gallery" class="footer-link">Gallery</a></li>
+              <li><a href="#reviews" class="footer-link">Reviews</a></li>
+              <li><a href="#appointment" class="footer-link">Book Now</a></li>
+            </ul>
+          </nav>
 
-            <li>
-              <p class="footer-list-title">Quick Links</p>
-            </li>
+          <div>
+            <p class="footer-list-title">Grooming Tips</p>
+            <ul class="footer-list tips">
+              <li><strong>Fade fading?</strong> Book a line-up every 2 weeks to keep edges sharp.</li>
+              <li><strong>Beard itch?</strong> Wash with a beard wash and use a few drops of oil daily.</li>
+              <li><strong>Dry scalp?</strong> Skip the hottest water and rinse thoroughly.</li>
+            </ul>
+          </div>
 
-            <li>
-              <a href="#" class="footer-link has-before">Our Services</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Meet Our Team</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Our Portfolio</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Need A Career?</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">News & Blog</a>
-            </li>
-
-          </ul>
-
-          <ul class="footer-list">
-
-            <li>
-              <p class="footer-list-title">Services</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Hair Cutting</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Shaving & Design</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Hair Colors</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Beauty & Spa</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Body Massages</a>
-            </li>
-
-          </ul>
-
-          <ul class="footer-list">
-
-            <li>
-              <p class="footer-list-title">Recent News</p>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 70; --height: 75;">
-                  <img src="./assets/images/footer-blog-1.jpg" width="70" height="75" loading="lazy"
-                    alt="The beginners guide to Henna Brows in Brisbane" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <h3>
-                    <a href="#" class="card-title">The beginners guide to Henna Brows in Brisbane</a>
-                  </h3>
-
-                  <div class="card-date">
-                    <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                    <time datetime="2022-08-25">25 August 2022</time>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 70; --height: 75;">
-                  <img src="./assets/images/footer-blog-2.jpg" width="70" height="75" loading="lazy"
-                    alt="How do I get rid of unwanted hair on my face?" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <h3>
-                    <a href="#" class="card-title">How do I get rid of unwanted hair on my face?</a>
-                  </h3>
-
-                  <div class="card-date">
-                    <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                    <time datetime="2022-08-25">25 August 2022</time>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <ul class="footer-list">
-
-            <li>
-              <p class="footer-list-title">Contact Us</p>
-            </li>
-
-            <li class="footer-list-item">
-              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
-
-              <address class="contact-link">
-                1234 Elm Street, Dallas, TX 75201
-            </address>
-            </li>
-
-            <li class="footer-list-item">
-              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-
-              <a href="tel:+0123456789" class="contact-link">+012 (345) 67 89</a>
-            </li>
-
-            <li class="footer-list-item">
-              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-              <span class="contact-link">Sun - Friday, 08 am - 09 pm</span>
-            </li>
-
-            <li class="footer-list-item">
-              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-
-              <a href="mailto:support@gmail.com" class="contact-link">support@gmail.com</a>
-            </li>
-
-          </ul>
+          <div>
+            <p class="footer-list-title">Contact</p>
+            <ul class="footer-list">
+              <li class="footer-list-item"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><address>1450 Oak Crossing Dr, Suite 110<br>Allen, TX 75013</address></li>
+              <li class="footer-list-item"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+12145550142" class="footer-link">(214) 555-0142</a></li>
+              <li class="footer-list-item"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:hello@example.com" class="footer-link">hello@example.com</a></li>
+              <li class="footer-list-item"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span>Mon-Fri 9-7, Sat 8-5, Sun closed</span></li>
+            </ul>
+          </div>
 
         </div>
-
       </div>
 
       <div class="footer-bottom">
-        <p class="copyright">
-          &copy; 2023 <a href="https://dfwsc.netlify.app/" class="copyright-link">DFW Software Consutling</a>. All Rights Reserved.
-        </p>
+        <p class="copyright">&copy; 2026 <a href="https://dfwsc.com" class="copyright-link" target="_blank" rel="noopener">Demo site by DFW Software Consulting</a></p>
+        <p class="copyright">The Barber Spot is a fictional business. All names, reviews and contact details are placeholders.</p>
       </div>
 
     </div>
   </footer>
 
-
-  <!-- 
-    - #BACK TO TOP
-  -->
-
-  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
-    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>
   </a>
 
   <script src="./assets/js/script.js" defer></script>
-
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
