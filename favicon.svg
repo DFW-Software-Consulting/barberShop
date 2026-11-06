@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="The Barber Spot">
+  <defs>
+    <clipPath id="pole"><rect x="23" y="10" width="18" height="44" rx="9"/></clipPath>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#14110e"/>
+  <g clip-path="url(#pole)">
+    <rect x="23" y="10" width="18" height="44" fill="#f3ece2"/>
+    <path d="M14 14l36 18v10L14 24zM14 34l36 18v10L14 44zM14 -6l36 18v10L14 4z" fill="#c0392b"/>
+    <path d="M14 24l36 18v6L14 30zM14 44l36 18v2L14 50zM14 4l36 18v6L14 10z" fill="#2c5f9e"/>
+  </g>
+  <rect x="21" y="7" width="22" height="5" rx="2.5" fill="#d4a95a"/>
+  <rect x="21" y="52" width="22" height="5" rx="2.5" fill="#d4a95a"/>
+</svg>
